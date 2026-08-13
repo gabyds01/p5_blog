@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>blog personal</title>
     </head>
-    <body>
+    <body style="max-width: 50vw">
         <header>
             <nav>
                 <a href="index.html#blog">blog</a>
@@ -15,9 +15,76 @@
         <main>
             <article>
                 <h1>DevOps</h1>
-                <h2>DevOps: Integración Continua y Entrega Continua</h2>
+                <p>
+                    Partimos de codificar en nuestra PC. ¿Qué pasa si queremos
+                    mostrar nuestra app o página? No podemos directamente:
+                    debemos "desplegar (deploy)" en un
+                    <strong>servidor (server)</strong> y luego comprar un
+                    <strong>dominio (domain)</strong> para no exponer la IP
+                    pública.
+                </p>
+                <p>
+                    Si crece el equipo de trabajo, debemos utilizar herramientas
+                    como <strong>Git</strong> y <strong>GitHub</strong> para
+                    poder trabajar de forma colaborativa.
+                </p>
+                <p>
+                    En este punto ya podemos
+                    <strong>construir (build)</strong> nuestra app o página y
+                    <strong>desplegarla (deploy)</strong> en el servidor.
+                    También podemos tener servidores separados: uno para
+                    construir, otro para pruebas (testing) y otro para
+                    producción.
+                </p>
+                <p>
+                    Este proceso inicial es manual, pero se puede automatizar;
+                    de ahí las siglas <strong>CI/CD</strong>, que significan
+                    Continuous Integration / Continuous Deployment.
+                </p>
+                <p>
+                    Para que nuestra app funcione en todos los servidores, estos
+                    deben tener todas las dependencias necesarias. Para que esto
+                    no falle se utiliza <strong>Docker</strong>: construimos una
+                    <strong>imagen</strong> de nuestra app y luego la ejecutamos
+                    en el servidor. La instancia de cada imagen es un
+                    <strong>contenedor (container)</strong>, aislado del resto,
+                    lo que permite desplegar múltiples versiones de la app en un
+                    mismo servidor.
+                </p>
+                <p>
+                    Ahora imaginen que crece la cantidad de servidores
+                    (escalabilidad horizontal) y queremos mantener todas las
+                    instancias de nuestros contenedores, controlarlos y asegurar
+                    que todo funcione correctamente. Es un proceso tedioso y
+                    propenso a fallos si lo hacemos manualmente; para ello
+                    podemos
+                    <strong>orquestar</strong> todo mediante una herramienta
+                    llamada <strong>Kubernetes</strong>.
+                </p>
+                <p>
+                    Habíamos mencionado que debemos tener en cada servidor las
+                    mismas dependencias. Para automatizar su configuración
+                    podemos usar
+                    <strong>Terraform</strong> (para aprovisionar la
+                    infraestructura) y <strong>Ansible</strong> (para configurar
+                    las dependencias en cada servidor).
+                </p>
+                <p>
+                    Una vez que tenemos todo funcionando correctamente, debemos
+                    <strong>monitorear</strong> los servidores para analizar su
+                    comportamiento y detectar fallas rápidamente. Con
+                    <strong>Prometheus</strong> recolectamos métricas como uso
+                    de CPU, RAM, procesos activos, etc., y luego visualizamos
+                    gráficos en tiempo real con <strong>Grafana</strong>.
+                </p>
+                <img
+                    src="img/devops_diagram.jpg"
+                    alt="diagrama del ciclo de devops"
+                    width="500"
+                />
             </article>
         </main>
+        <hr />
         <footer>&copy; 2026 da Silva Gabriel</footer>
     </body>
 </html>
