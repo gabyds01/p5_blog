@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog personal - pendientes</title>
+</head>
+
+<body style="max-width: 50vw">
+    <header>
+        <nav>
+            <a href="index.html#blog">blog</a>
+            <a href="about_us.html">sobre mí</a>
+            <a href="todo.html">pendientes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Contenidos Pendientes</h1>
+            <p>Lista de temas y contenidos pendientes por desarrollar en cada nota del blog.</p>
+            <hr />
+        </article>
+        <article id="system-design">
+            <h2>Diseño de Sistemas</h2>
+            <ul>
+                <li>Pesos en algoritmos de Load Balancer (Weighted Round Robin, Weighted Least Connections).</li>
+                <li>Algoritmo IP Hash en balanceo de carga: importancia, casos de uso y problemas (ej. desbalanceo tras proxies/NAT).</li>
+                <li>Replicación de bases de datos y Sharding.</li>
+                <li>Particionamiento de datos.</li>
+                <li>Caché: TTL (Time to Live), políticas de evicción (LRU, LFU, etc.) e invalidación.</li>
+                <li>Content Delivery Network (CDN).</li>
+                <li>Diferencia entre latencia y rendimiento (throughput).</li>
+                <li>Consistencia fuerte vs. consistencia eventual.</li>
+                <li>Colas de datos / mensajes (Message Queues).</li>
+            </ul>
+            <hr />
+        </article>
+        <article id="devops">
+            <h2>DevOps</h2>
+            <ul>
+                <li>Fundamentos de Linux (comandos clave, gestión de permisos, procesos, servicios con systemd y redes).</li>
+                <li>Scripting en Bash para automatización de tareas comunes.</li>
+                <li>Ejemplos prácticos y de código para cada etapa:
+                    <ul>
+                        <li>CI/CD: Configuración de un pipeline real (ej. GitHub Actions / GitLab CI).</li>
+                        <li>Docker: Ejemplo de <code>Dockerfile</code> y <code>docker-compose.yml</code> para una app web.</li>
+                        <li>Kubernetes: Manifiestos YAML básicos (Pod, Deployment y Service).</li>
+                        <li>Infraestructura como Código (IaC): Ejemplos prácticos con Terraform y playbooks de Ansible.</li>
+                        <li>Monitoreo: Configuración de captura de métricas con Prometheus y creación de dashboards en Grafana.</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr />
+        </article>
+        <article id="rag">
+            <h2>RAG: Generación Aumentada por Recuperación</h2>
+            <ul>
+                <li>Prompt Injection (seguridad y mitigaciones).</li>
+                <li>Modelos de Embeddings.</li>
+                <li>Bases de Datos Vectoriales (Vector Databases).</li>
+                <li>Indexación de documentos.</li>
+                <li>Chunking: estrategias y distintas formas de llevarlo a cabo.</li>
+            </ul>
+            <hr />
+        </article>
+        <article id="ai-agents">
+            <h2>Agentes de IA</h2>
+            <ul>
+                <li>Diferencia conceptual entre Chatbot y Agente de IA.</li>
+                <li>Por qué crear y estructurar skills (herramientas) para los agentes.</li>
+                <li>Ciclo completo de ejecución: Prompt &rarr; Skill &rarr; Automatización.</li>
+            </ul>
+        </article>
+    </main>
+    <hr />
+    <footer>&copy; 2026 da Silva Gabriel</footer>
+</body>
+
+</html>

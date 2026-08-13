@@ -10,43 +10,51 @@
             <nav>
                 <a href="index.html#blog">blog</a>
                 <a href="about_us.html">sobre mí</a>
+                <a href="todo.html">pendientes</a>
             </nav>
         </header>
         <main>
             <article>
                 <h1>Diseño de Sistemas</h1>
+                <span><em>estado</em>: en progreso (<a href="todo.html#system-design">ver pendientes</a>)</span>
                 <p>
-                    El diseño de sistemas es el proceso de definir la arquitectura,
-                    componentes y relaciones de un sistema para hacerlo robusto
-                    y confiable.
+                    El diseño de sistemas es el proceso de definir la
+                    arquitectura, componentes y relaciones de un sistema para
+                    hacerlo robusto y confiable.
                 </p>
+                <img
+                    src="img/system_design.webp"
+                    alt="Diseño de Sistemas"
+                    height="300"
+                />
                 <hr />
             </article>
             <article>
                 <h2>Disponibilidad y Escalabilidad</h2>
                 <p>
-                    La disponibilidad y la escalabilidad son aspectos clave del diseño de
-                    sistemas. Garantizan que el sistema pueda manejar un gran
-                    número de usuarios y solicitudes sin interrupciones.
+                    La disponibilidad y la escalabilidad son aspectos clave del
+                    diseño de sistemas. Garantizan que el sistema pueda manejar
+                    un gran número de usuarios y solicitudes sin interrupciones.
                 </p>
                 <ul>
                     <li>
-                        <strong>Escalabilidad:</strong> La capacidad de manejar un volumen creciente
-                        de datos o tráfico.
+                        <strong>Escalabilidad:</strong> La capacidad de manejar
+                        un volumen creciente de datos o tráfico.
                         <ul>
                             <li>
-                                <em>Escalabilidad horizontal:</em> Agregar más servidores o
-                                nodos.
+                                <em>Escalabilidad horizontal:</em> Agregar más
+                                servidores o nodos.
                             </li>
                             <li>
-                                <em>Escalabilidad vertical:</em> Agregar más recursos a
-                                un servidor existente.
+                                <em>Escalabilidad vertical:</em> Agregar más
+                                recursos a un servidor existente.
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Disponibilidad:</strong> La proporción de tiempo que un sistema
-                        permanece operacional y responsivo ante las solicitudes.
+                        <strong>Disponibilidad:</strong> La proporción de tiempo
+                        que un sistema permanece operacional y responsivo ante
+                        las solicitudes.
                         <ul>
                             <li>
                                 <math>
@@ -71,17 +79,19 @@
             <article>
                 <h2>¿Cómo manejar la escalabilidad horizontal?</h2>
                 <p>
-                    Un <strong>Balanceador de Carga</strong> (Load Balancer) distribuye las solicitudes entre
-                    los servidores utilizando diferentes algoritmos, tales como:
+                    Un <strong>Balanceador de Carga</strong> (Load Balancer)
+                    distribuye las solicitudes entre los servidores utilizando
+                    diferentes algoritmos, tales como:
                 </p>
                 <ul>
                     <li>
-                        <em>Round Robin</em>: Distribuye las solicitudes secuencialmente,
-                        sin importar la carga del servidor.
+                        <em>Round Robin</em>: Distribuye las solicitudes
+                        secuencialmente, sin importar la carga del servidor.
                     </li>
                     <li>
-                        <em>Least Connections (Menos Conexiones)</em>: Dirige las solicitudes al servidor
-                        con menos conexiones activas, útil para manejar cargas de trabajo variables.
+                        <em>Least Connections (Menos Conexiones)</em>: Dirige
+                        las solicitudes al servidor con menos conexiones
+                        activas, útil para manejar cargas de trabajo variables.
                     </li>
                 </ul>
                 <img
@@ -94,37 +104,43 @@
             <article>
                 <h2>Bases de Datos</h2>
                 <p>
-                    Para almacenar los datos de usuario, dependemos de almacenamiento físico o en la nube,
-                    donde los datos pueden estructurarse en diferentes formatos:
+                    Para almacenar los datos de usuario, dependemos de
+                    almacenamiento físico o en la nube, donde los datos pueden
+                    estructurarse en diferentes formatos:
                 </p>
                 <ul>
                     <li>
-                        <em>SQL</em>: Los datos se estructuran en tablas relacionales y las
-                        transacciones siguen los principios <strong>ACID</strong>.
+                        <em>SQL</em>: Los datos se estructuran en tablas
+                        relacionales y las transacciones siguen los principios
+                        <strong>ACID</strong>.
                     </li>
                     <li>
-                        <em>NoSQL</em>: Modelos de datos flexibles, optimizados para escalabilidad
-                        horizontal y diversos tipos de datos.
+                        <em>NoSQL</em>: Modelos de datos flexibles, optimizados
+                        para escalabilidad horizontal y diversos tipos de datos.
                     </li>
                 </ul>
                 <h3>¿Qué es ACID?</h3>
                 <ul>
                     <li>
-                        <strong>Atomicidad</strong>: Garantiza que todas las operaciones
-                        dentro de una transacción se completen totalmente o fallen
-                        por completo.
+                        <strong>Atomicidad</strong>: Garantiza que todas las
+                        operaciones dentro de una transacción se completen
+                        totalmente o fallen por completo.
                     </li>
                     <li>
-                        <strong>Consistencia</strong>: Asegura que la base de datos permanezca en un
-                        estado válido antes y después de cualquier transacción.
+                        <strong>Consistencia</strong>: Asegura que la base de
+                        datos permanezca en un estado válido antes y después de
+                        cualquier transacción.
                     </li>
                     <li>
-                        <strong>Aislamiento (Isolation)</strong>: Asegura que las transacciones concurrentes
-                        se ejecuten de forma independiente sin interferir entre sí.
+                        <strong>Aislamiento (Isolation)</strong>: Asegura que
+                        las transacciones concurrentes se ejecuten de forma
+                        independiente sin interferir entre sí.
                     </li>
                     <li>
-                        <strong>Durability (Durabilidad)</strong>: Garantiza que los datos de transacciones confirmadas
-                        se guarden permanentemente, incluso en caso de un fallo del sistema.
+                        <strong>Durability (Durabilidad)</strong>: Garantiza que
+                        los datos de transacciones confirmadas se guarden
+                        permanentemente, incluso en caso de un fallo del
+                        sistema.
                     </li>
                 </ul>
                 <hr />
