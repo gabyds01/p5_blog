@@ -31,22 +31,22 @@
                 </p>
                 <ul>
                     <li>
-                        <strong>Scalability:</strong> capacity to handle data or
-                        users.
+                        <strong>Scalability:</strong> The capacity to handle
+                        growing data or traffic.
+                        <ul>
+                            <li>
+                                <em>Horizontal scaling:</em> Adding more servers
+                                or nodes.
+                            </li>
+                            <li>
+                                <em>Vertical scaling:</em> Adding more resources
+                                to an existing server.
+                            </li>
+                        </ul>
                     </li>
-                    <ul>
-                        <li>
-                            <em>Horizontal scaling:</em> adding more servers or
-                            nodes.
-                        </li>
-                        <li>
-                            <em>Vertical scaling:</em> adding more resources to
-                            existing servers.
-                        </li>
-                    </ul>
                     <li>
-                        <strong>Availability:</strong> How long a system is
-                        available and able to respond to requests.
+                        <strong>Availability:</strong> The proportion of time a
+                        system remains operational and responsive to requests.
                         <ul>
                             <li>
                                 <math>
@@ -71,18 +71,18 @@
             <article>
                 <h2>How to handle horizontal scaling?</h2>
                 <p>
-                    With a <strong>Load Balancer</strong>, it distribute the
-                    requests between servers using differents algorithms like:
+                    A <strong>Load Balancer</strong> distributes requests across
+                    servers using different algorithms, such as:
                 </p>
                 <ul>
                     <li>
-                        <em>Round Robin</em>: For turns without care the loads
-                        of servers.
+                        <em>Round Robin</em>: Distributes requests sequentially,
+                        regardless of server load.
                     </li>
                     <li>
-                        <em>Least-Connectios</em>: Distribute to servers with
-                        short requests, it's useful for distinguishing "types of
-                        requests" and balancing them accordingly.
+                        <em>Least Connections</em>: Directs requests to the
+                        server with the fewest active connections, useful for
+                        handling varying request workloads.
                     </li>
                 </ul>
                 <img
@@ -93,42 +93,43 @@
                 <hr />
             </article>
             <article>
-                <h2>Data Base</h2>
+                <h2>Database</h2>
                 <p>
-                    To store the user data, we need a physical or cloud
-                    placement, the data can be stored in differents formats.
+                    To store user data, we rely on physical or cloud storage,
+                    where data can be structured in different formats:
                 </p>
                 <ul>
                     <li>
-                        <em>SQL</em>: Data is stored in tables with
-                        relationships, the data is structured, and the
-                        transactions follow de <strong>ACID</strong> principles.
+                        <em>SQL</em>: Data is structured in relational tables,
+                        and transactions follow the
+                        <strong>ACID</strong> principles.
                     </li>
                     <li>
-                        <em>NoSQL</em>: Flex models, better for horizontal
-                        scaling and differents types of data.
+                        <em>NoSQL</em>: Flexible data models, optimized for
+                        horizontal scaling and diverse data types.
                     </li>
                 </ul>
                 <h3>What is ACID?</h3>
                 <ul>
                     <li>
-                        <strong>Atomicity</strong>: Occurr when a transaction is
-                        completed, all changes are either applied or not.
+                        <strong>Atomicity</strong>: Guarantees that all
+                        operations within a transaction either succeed
+                        completely or fail entirely.
                     </li>
                     <li>
-                        <strong>Consistency</strong>: The database remains in a
-                        consistent state after a transaction.
+                        <strong>Consistency</strong>: Ensures the database
+                        remains in a valid state before and after any
+                        transaction.
                     </li>
                     <li>
-                        <strong>Isolation</strong>: The transactions are
-                        isolated from each other, so changes made by one
-                        transaction do not affect others, most commonly in
-                        concurrent transactions.
+                        <strong>Isolation</strong>: Ensures concurrent
+                        transactions execute independently without interfering
+                        with each other.
                     </li>
                     <li>
-                        <strong>Durability</strong>: The changes made by a
-                        transaction are permanent, even in the event of a system
-                        failure.
+                        <strong>Durability</strong>: Guarantees that committed
+                        transaction data is saved permanently, even in the event
+                        of a system failure.
                     </li>
                 </ul>
                 <hr />
