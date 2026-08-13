@@ -4,39 +4,78 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>blog personal</title>
+        <!-- Mensaje secreto: ¡Felicidades, encontraste el mensaje oculto a través del inspector de elementos! -->
     </head>
 
     <body style="max-width: 50vw">
         <header>
             <nav>
-                <a href="#blog">blog</a>
+                <a href="index.html#blog">blog</a>
                 <a href="about_us.html">sobre mí</a>
                 <a href="todo.html">pendientes</a>
+                <a
+                    href="https://github.com/gabyds01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub (externo)</a
+                >
             </nav>
         </header>
         <main>
             <h1>Mis Notas</h1>
             <p>
                 El propósito de este blog es compartir poco a poco lo que voy
-                aprendiendo tras graduarme de la universidad, ofreciendo un recurso
-                práctico para estudiantes y cualquier persona que desee aprender
-                sobre estos temas.
+                aprendiendo tras graduarme de la universidad, ofreciendo un
+                recurso práctico para estudiantes y cualquier persona que desee
+                aprender sobre
+                <u>desarrollo y arquitectura de software</u>.<br />
+                ¡Bienvenido a mi espacio de notas y aprendizaje continuo!
             </p>
             <hr />
+
+            <section id="recommended-path">
+                <h3>Ruta Recomendada de Lectura</h3>
+                <ol>
+                    <li>Diseño de Sistemas</li>
+                    <li>DevOps</li>
+                    <li>RAG: Generación Aumentada por Recuperación</li>
+                </ol>
+            </section>
+            <hr />
+
+            <h2>Publicaciones del Blog</h2>
             <section id="brief-blog">
                 <article class="brief-note">
-                    <h1>Diseño de Sistemas</h1>
-                    <span><em>estado</em>: en progreso (<a href="todo.html#system-design">ver pendientes</a>)</span>
+                    <h3>Diseño de Sistemas</h3>
+                    <span
+                        ><em>estado</em>: <u>en progreso</u> (<a
+                            href="todo.html#system-design"
+                            >ver pendientes</a
+                        >)</span
+                    >
                     <p>
                         El diseño de sistemas es el proceso de definir la
                         arquitectura, componentes e interacciones de un sistema.
                     </p>
+                    <a href="system_design.html">
+                        <img
+                            src="img/system_design.webp"
+                            alt="Diseño de Sistemas"
+                            height="200"
+                        />
+                    </a>
+                    <br />
                     <a href="system_design.html">Leer más</a>
                     <hr />
                 </article>
                 <article class="brief-note">
-                    <h1>DevOps</h1>
-                    <span><em>estado</em>: en progreso (<a href="todo.html#devops">ver pendientes</a>)</span>
+                    <h3>DevOps</h3>
+                    <span
+                        ><em>estado</em>: <u>en progreso</u> (<a
+                            href="todo.html#devops"
+                            >ver pendientes</a
+                        >)</span
+                    >
                     <p>
                         DevOps es la combinación de personas, procesos y
                         herramientas que trabajan en conjunto desde una idea
@@ -47,8 +86,13 @@
                     <hr />
                 </article>
                 <article class="brief-note">
-                    <h1>RAG: Generación Aumentada por Recuperación</h1>
-                    <span><em>estado</em>: en progreso (<a href="todo.html#rag">ver pendientes</a>)</span>
+                    <h3>RAG: Generación Aumentada por Recuperación</h3>
+                    <span
+                        ><em>estado</em>: <u>en progreso</u> (<a
+                            href="todo.html#rag"
+                            >ver pendientes</a
+                        >)</span
+                    >
                     <p>
                         Consiste en otorgar a los modelos de IA la capacidad de
                         aumentar su conocimiento consultando fuentes externas de
@@ -60,6 +104,14 @@
             <aside></aside>
         </main>
         <hr />
-        <footer>&copy; 2026 da Silva Gabriel</footer>
+        <footer>
+            &copy; 2026 da Silva Gabriel |
+            <a
+                href="https://github.com/gabyds01"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Mi GitHub</a
+            >
+        </footer>
     </body>
 </html>
