@@ -1,60 +1,60 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>personal blog</title>
+        <title>blog personal</title>
     </head>
     <body style="max-width: 50vw">
         <header>
             <nav>
                 <a href="index.html#blog">blog</a>
-                <a href="about_us.html">about us</a>
+                <a href="about_us.html">sobre mí</a>
             </nav>
         </header>
         <main>
             <article>
-                <h1>System Design</h1>
+                <h1>Diseño de Sistemas</h1>
                 <p>
-                    System design is the process of defining the architecture,
-                    components, and relationships of a system to make it robust
-                    and reliable.
+                    El diseño de sistemas es el proceso de definir la arquitectura,
+                    componentes y relaciones de un sistema para hacerlo robusto
+                    y confiable.
                 </p>
                 <hr />
             </article>
             <article>
-                <h2>Availability and Scalability</h2>
+                <h2>Disponibilidad y Escalabilidad</h2>
                 <p>
-                    Availability and scalability are key aspects of system
-                    design. They ensure that the system can handle a large
-                    number of users and requests without downtime.
+                    La disponibilidad y la escalabilidad son aspectos clave del diseño de
+                    sistemas. Garantizan que el sistema pueda manejar un gran
+                    número de usuarios y solicitudes sin interrupciones.
                 </p>
                 <ul>
                     <li>
-                        <strong>Scalability:</strong> The capacity to handle
-                        growing data or traffic.
+                        <strong>Escalabilidad:</strong> La capacidad de manejar un volumen creciente
+                        de datos o tráfico.
                         <ul>
                             <li>
-                                <em>Horizontal scaling:</em> Adding more servers
-                                or nodes.
+                                <em>Escalabilidad horizontal:</em> Agregar más servidores o
+                                nodos.
                             </li>
                             <li>
-                                <em>Vertical scaling:</em> Adding more resources
-                                to an existing server.
+                                <em>Escalabilidad vertical:</em> Agregar más recursos a
+                                un servidor existente.
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Availability:</strong> The proportion of time a
-                        system remains operational and responsive to requests.
+                        <strong>Disponibilidad:</strong> La proporción de tiempo que un sistema
+                        permanece operacional y responsivo ante las solicitudes.
                         <ul>
                             <li>
                                 <math>
-                                    <mi>availability</mi>
+                                    <mi>disponibilidad</mi>
                                     <mo> = </mo>
                                     <mfrac>
-                                        <mi>available_time</mi>
-                                        <mi>real_time</mi>
+                                        <mi>tiempo_disponible</mi>
+                                        <mi>tiempo_real</mi>
                                     </mfrac>
                                 </math>
                             </li>
@@ -63,73 +63,68 @@
                 </ul>
                 <img
                     src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ajJUTPOMi5Ir9EnIrD6mRg@2x.jpeg"
-                    alt="horizontal vs vertical scaling"
+                    alt="escalabilidad horizontal vs vertical"
                     width="300"
                 />
                 <hr />
             </article>
             <article>
-                <h2>How to handle horizontal scaling?</h2>
+                <h2>¿Cómo manejar la escalabilidad horizontal?</h2>
                 <p>
-                    A <strong>Load Balancer</strong> distributes requests across
-                    servers using different algorithms, such as:
+                    Un <strong>Balanceador de Carga</strong> (Load Balancer) distribuye las solicitudes entre
+                    los servidores utilizando diferentes algoritmos, tales como:
                 </p>
                 <ul>
                     <li>
-                        <em>Round Robin</em>: Distributes requests sequentially,
-                        regardless of server load.
+                        <em>Round Robin</em>: Distribuye las solicitudes secuencialmente,
+                        sin importar la carga del servidor.
                     </li>
                     <li>
-                        <em>Least Connections</em>: Directs requests to the
-                        server with the fewest active connections, useful for
-                        handling varying request workloads.
+                        <em>Least Connections (Menos Conexiones)</em>: Dirige las solicitudes al servidor
+                        con menos conexiones activas, útil para manejar cargas de trabajo variables.
                     </li>
                 </ul>
                 <img
                     src="img/load_balancer.webp"
-                    alt="load balancer"
+                    alt="balanceador de carga"
                     width="300"
                 />
                 <hr />
             </article>
             <article>
-                <h2>Database</h2>
+                <h2>Bases de Datos</h2>
                 <p>
-                    To store user data, we rely on physical or cloud storage,
-                    where data can be structured in different formats:
+                    Para almacenar los datos de usuario, dependemos de almacenamiento físico o en la nube,
+                    donde los datos pueden estructurarse en diferentes formatos:
                 </p>
                 <ul>
                     <li>
-                        <em>SQL</em>: Data is structured in relational tables,
-                        and transactions follow the
-                        <strong>ACID</strong> principles.
+                        <em>SQL</em>: Los datos se estructuran en tablas relacionales y las
+                        transacciones siguen los principios <strong>ACID</strong>.
                     </li>
                     <li>
-                        <em>NoSQL</em>: Flexible data models, optimized for
-                        horizontal scaling and diverse data types.
+                        <em>NoSQL</em>: Modelos de datos flexibles, optimizados para escalabilidad
+                        horizontal y diversos tipos de datos.
                     </li>
                 </ul>
-                <h3>What is ACID?</h3>
+                <h3>¿Qué es ACID?</h3>
                 <ul>
                     <li>
-                        <strong>Atomicity</strong>: Guarantees that all
-                        operations within a transaction either succeed
-                        completely or fail entirely.
+                        <strong>Atomicidad</strong>: Garantiza que todas las operaciones
+                        dentro de una transacción se completen totalmente o fallen
+                        por completo.
                     </li>
                     <li>
-                        <strong>Consistency</strong>: Ensures the database
-                        remains in a valid state before and after any
-                        transaction.
+                        <strong>Consistencia</strong>: Asegura que la base de datos permanezca en un
+                        estado válido antes y después de cualquier transacción.
                     </li>
                     <li>
-                        <strong>Isolation</strong>: Ensures concurrent
-                        transactions execute independently without interfering
-                        with each other.
+                        <strong>Aislamiento (Isolation)</strong>: Asegura que las transacciones concurrentes
+                        se ejecuten de forma independiente sin interferir entre sí.
                     </li>
                     <li>
-                        <strong>Durability</strong>: Guarantees that committed
-                        transaction data is saved permanently, even in the event
-                        of a system failure.
+                        <strong>Durability (Durabilidad)</strong>: Garantiza que los datos de transacciones confirmadas
+                        se guarden permanentemente, incluso en caso de un fallo del sistema.
                     </li>
                 </ul>
                 <hr />
