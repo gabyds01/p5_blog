@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>personal blog</title>
+    </head>
+    <body style="max-width: 50vw">
+        <header>
+            <nav>
+                <a href="index.html#blog">blog</a>
+                <a href="about_us.html">about us</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>System Design</h1>
+                <p>
+                    System design is the process of defining the architecture,
+                    components, and relationships of a system to make it robust
+                    and reliable.
+                </p>
+                <hr />
+            </article>
+            <article>
+                <h2>Availability and Scalability</h2>
+                <p>
+                    Availability and scalability are key aspects of system
+                    design. They ensure that the system can handle a large
+                    number of users and requests without downtime.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Scalability:</strong> capacity to handle data or
+                        users.
+                    </li>
+                    <ul>
+                        <li>
+                            <em>Horizontal scaling:</em> adding more servers or
+                            nodes.
+                        </li>
+                        <li>
+                            <em>Vertical scaling:</em> adding more resources to
+                            existing servers.
+                        </li>
+                    </ul>
+                    <li>
+                        <strong>Availability:</strong> How long a system is
+                        available and able to respond to requests.
+                        <ul>
+                            <li>
+                                <math>
+                                    <mi>availability</mi>
+                                    <mo> = </mo>
+                                    <mfrac>
+                                        <mi>available_time</mi>
+                                        <mi>real_time</mi>
+                                    </mfrac>
+                                </math>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img
+                    src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ajJUTPOMi5Ir9EnIrD6mRg@2x.jpeg"
+                    alt="horizontal vs vertical scaling"
+                    width="300"
+                />
+                <hr />
+            </article>
+            <article>
+                <h2>How to handle horizontal scaling?</h2>
+                <p>
+                    With a <strong>Load Balancer</strong>, it distribute the
+                    requests between servers using differents algorithms like:
+                </p>
+                <ul>
+                    <li>
+                        <em>Round Robin</em>: For turns without care the loads
+                        of servers.
+                    </li>
+                    <li>
+                        <em>Least-Connectios</em>: Distribute to servers with
+                        short requests, it's useful for distinguishing "types of
+                        requests" and balancing them accordingly.
+                    </li>
+                </ul>
+                <img
+                    src="img/load_balancer.webp"
+                    alt="load balancer"
+                    width="300"
+                />
+                <hr />
+            </article>
+            <article>
+                <h2>Data Base</h2>
+                <p>
+                    To store the user data, we need a physical or cloud
+                    placement, the data can be stored in differents formats.
+                </p>
+                <ul>
+                    <li>
+                        <em>SQL</em>: Data is stored in tables with
+                        relationships, the data is structured, and the
+                        transactions follow de <strong>ACID</strong> principles.
+                    </li>
+                    <li>
+                        <em>NoSQL</em>: Flex models, better for horizontal
+                        scaling and differents types of data.
+                    </li>
+                </ul>
+                <h3>What is ACID?</h3>
+                <ul>
+                    <li>
+                        <strong>Atomicity</strong>: Occurr when a transaction is
+                        completed, all changes are either applied or not.
+                    </li>
+                    <li>
+                        <strong>Consistency</strong>: The database remains in a
+                        consistent state after a transaction.
+                    </li>
+                    <li>
+                        <strong>Isolation</strong>: The transactions are
+                        isolated from each other, so changes made by one
+                        transaction do not affect others, most commonly in
+                        concurrent transactions.
+                    </li>
+                    <li>
+                        <strong>Durability</strong>: The changes made by a
+                        transaction are permanent, even in the event of a system
+                        failure.
+                    </li>
+                </ul>
+                <hr />
+            </article>
+        </main>
+        <footer>&copy; 2026 da Silva Gabriel</footer>
+    </body>
+</html>
